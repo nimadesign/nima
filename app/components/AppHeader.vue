@@ -7,7 +7,7 @@ defineProps<{
 
 function scrlFn() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header")!.style.width = "calc(var(--spacing) * 76)";
+    document.getElementById("header")!.style.width = "calc(var(--spacing) * 90)";
   } else {
     document.getElementById("header")!.style.width = "calc(var(--spacing) * 160)";
   }
