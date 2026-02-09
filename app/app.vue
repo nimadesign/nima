@@ -42,6 +42,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 
 <template>
   <UApp>
+    <NuxtLoadingIndicator/>
     <NuxtLayout>
       <UMain class="relative">
         <NuxtPage />
