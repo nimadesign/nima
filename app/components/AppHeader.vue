@@ -28,6 +28,11 @@ addEventListener("scroll", scrlFn);
         linkLeadingIcon: 'hidden'
       }"
     >
+    <template #list-leading>
+      <ClientOnly>
+        <UContentSearchButton class="rounded-full"/>
+      </ClientOnly>
+    </template>
       <template #list-trailing>
         <ColorModeButton />
       </template>
