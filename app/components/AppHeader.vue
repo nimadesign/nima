@@ -3,11 +3,21 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 
 defineProps<{
   links: NavigationMenuItem[]
-}>()
+}>();
+
+function scrlFn() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header")!.style.width = "calc(var(--spacing) * 76)";
+  } else {
+    document.getElementById("header")!.style.width = "calc(var(--spacing) * 160)";
+  }
+}
+
+addEventListener("scroll", scrlFn);
 </script>
 
 <template>
-  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
+  <div id="header" class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10 max-w-fit md:max-w-full" style="width: calc(var(--spacing) * 160); transition: 0.4s;">
     <UNavigationMenu
       :items="links"
       variant="link"

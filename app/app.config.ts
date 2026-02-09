@@ -26,7 +26,7 @@ export default defineAppConfig({
     credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
     colorMode: false,
     links: [{
-      'icon': 'i-simple-icons-discord',
+      'icon': 'i-simple-icons-dribbble',
       'to': 'https://go.nuxt.com/discord',
       'target': '_blank',
       'aria-label': 'Nuxt on Discord'
@@ -37,6 +37,11 @@ export default defineAppConfig({
       'aria-label': 'Nuxt on X'
     }, {
       'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/nuxt/ui',
+      'target': '_blank',
+      'aria-label': 'Nuxt UI on GitHub'
+       }, {
+      'icon': 'i-simple-icons-linkedin',
       'to': 'https://github.com/nuxt/ui',
       'target': '_blank',
       'aria-label': 'Nuxt UI on GitHub'
