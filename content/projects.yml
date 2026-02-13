@@ -4,3 +4,6 @@ links:
   - label: Let's talk
     color: neutral
   - label: Email me
+navigation:
+  title: ""
+  description: ""
